@@ -4,7 +4,7 @@ import Tasks from "./components/Tasks";
 
 function App() {
   const [tasks, setTasks] = useState(
-    JSON.parse(localStorage.getItem("tasks") || [])
+    JSON.parse(localStorage.getItem("tasks") || "[]")
   )
   
   // cria um evento quando a tasks ou a lista for alterada
